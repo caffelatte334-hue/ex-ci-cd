@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>과일 1개</title>
+</head>
+<body>
+
+<h1>과일 정보 cicd 확인용 과일</h1>
+
+<!-- ${모델명.속성명}은 Thymeleaf(타임리프)라는 템플릿 엔진이
+서버(Java)에서 전달받은 Model 속 데이터를 꺼내 쓰기 위해 정해둔 문법 -->
+<p>아이디: <span th:text="${fruit.id}"></span></p>
+<p>이름: <span th:text="${fruit.name}"></span></p>
+<p>가격: <span th:text="${fruit.price}"></span> 원</p>
+
+</body>
+</html>
